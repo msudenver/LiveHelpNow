@@ -1,5 +1,6 @@
 /* LIVEHELPNOW CHAT WINDOW */
 /* DO NOT EDIT*/
+
 html {height: 100%;}
 body{
   height:99.8%;
@@ -9,6 +10,8 @@ body{
 form
 {
 	height:100%;
+/*ADDED*/
+  background: #fff;
 }
 input:focus{
 background-color: #fffaee;
@@ -22,9 +25,13 @@ height:100%;
 
 /* CAN EDIT*/
 body{
-background:#EFEFEF;
-font-family:tahoma, arial;
-color:#000;
+/*background:#EFEFEF;*/
+/*font-family:tahoma, arial;*/
+/*color:#000;*/
+font-family: 'Open Sans';
+background: #fff;
+border: 1px solid #CECECE;
+color: #000000;
 }
 
 a {
@@ -59,8 +66,10 @@ vertical-align: top;
 height: 71px;
 }
 #chatTitle{
-background: url("https://www.livehelpnow.net/lhn/windows/chat/def/images/title_shade.png") repeat-x scroll 0 0 transparent;
+/*background: url("https://www.livehelpnow.net/lhn/windows/chat/def/images/title_shade.png") repeat-x scroll 0 0 transparent;*/
 height: 71px;
+/*ADDED*/
+  background: #fff;
 }
 
 #chatTitleBG{
@@ -81,20 +90,30 @@ padding-left: 5px;
 }
 
 #closeTop, #closeTop:visited{
-background: url("https://www.livehelpnow.net/lhn/windows/chat/def/images/close.png") no-repeat scroll 0 -18px transparent;
+/*background: url("https://www.livehelpnow.net/lhn/windows/chat/def/images/close.png") no-repeat scroll 0 -18px transparent;*/
 display:block;
-width:60px;
-height:17px;
+/*width:60px;*/
+/*height:17px;*/
 float:right;
 margin-right: 50px;
 text-indent: 0px;
-padding-left: 22px;
-margin:20px 2px 2px 0;
+/*padding-left: 22px;*/
+/*margin:20px 2px 2px 0;*/
 text-decoration: none;
 font-family: arial;
 color: #000;
 font-size: 12px;
 padding-top: 1px;
+/*ADDED*/
+background: #D11242;
+border: 1px solid #AA0924;
+color: #fff;
+height: 40px;
+width: 115px;
+border-radius: 5px;
+margin: 20px 20px 2px 0;
+text-align: center;
+padding-left: 0px;
 }
 
 #closeTop:hover{
@@ -410,10 +429,15 @@ width: 10px;
 }
 
 #chatConversation{
-background-color:#ffffff;
+/*background-color:#ffffff;*/
 border-width:1px;
 border-style:solid;
-border-color:rgb(202, 208, 225);
+/*border-color:rgb(202, 208, 225);*/
+/*ADDED*/
+background-color: #F4F4F4;
+border-color: #CECECE;
+height: 255px;
+width: 400px;
 }
 
 #mainchat{
@@ -601,11 +625,17 @@ height:70px;
 
 #message{
 z-index: 2;
-width: 99.7%;
-height: 70px;
-border-width: 1px;
-border-style: solid;
-border-color: rgb(202, 208, 225);
+/*width: 99.7%;*/
+/*height: 70px;*/
+/*border-width: 1px;*/
+/*border-style: solid;*/
+/*border-color: rgb(202, 208, 225);*/
+/*ADDED*/
+background: #F4F4F4;
+border: 1px solid #CECECE;
+height: 80px;
+width: 400px;
+color: #000;
 }
 
 #msgSendDivideRt{
@@ -895,6 +925,8 @@ margin:20px 2px 2px 0;
 
 #preChatWindowTbl {
 height:100%;
+/*ADDED*/
+  background: #fff;
 }
 
 #preChatRow1Header{
@@ -906,8 +938,10 @@ height: 71px;
 }
 
 #preChatTitle{
-background: none;
+/*background: none;*/
 height: 71px;
+/*ADDED*/
+  background: #fff;
 }
 
 #preChatTitleBG{
@@ -1000,20 +1034,30 @@ margin: 3px 4px;
 }
 
 #preChatCloseTop, #preChatCloseTop:visited{
-background: url("https://www.livehelpnow.net/lhn/windows/chat/def/images/close.png") no-repeat scroll 0 -18px transparent;
+/*background: url("https://www.livehelpnow.net/lhn/windows/chat/def/images/close.png") no-repeat scroll 0 -18px transparent;*/
 display:block;
-width:60px;
-height:17px;
+/*width:60px;*/
+/*height:17px;*/
 float:right;
 margin-right: 50px;
 text-indent: 0px;
-padding-left: 22px;
-margin:20px 2px 2px 0;
+/*padding-left: 22px;*/
+/*margin:20px 2px 2px 0;*/
 text-decoration: none;
 font-family: arial;
-color: #000;
+/*color: #000;*/
 font-size: 12px;
 padding-top: 1px;
+/*ADDED*/
+background: #D11242;
+border: 1px solid #AA0924;
+color: #fff;
+height: 40px;
+width: 115px;
+border-radius: 5px;
+margin: 20px 20px 2px 0;
+text-align: center;
+padding-left: 0px;
 }
 
 #preChatCloseTop:hover{
@@ -1529,19 +1573,30 @@ margin: 3px 4px;
 #preChatStartBot, #preChatStartBot:visited{
 display: block;
 margin-left: 15px;
-background: url("https://www.livehelpnow.net/lhn/windows/chat/def/images/start_button.jpg") no-repeat scroll 0 0 transparent;
-width: 120px;
-height: 26px;
+/*background: url("https://www.livehelpnow.net/lhn/windows/chat/def/images/start_button.jpg") no-repeat scroll 0 0 transparent;*/
+/*width: 120px;*/
+/*height: 26px;*/
 text-indent: 0px;
 margin-bottom: 0px;
 text-decoration: none;
-color: #2c2c2c;
+/*color: #2c2c2c;*/
 font-size: 14px;
 font-weight: normal;
 text-align: center;
 padding-top: 5px;
--webkit-box-shadow: 10px 10px 5px #888888; /* Safari and Chrome */
+/*-webkit-box-shadow: 10px 10px 5px #888888; /* Safari and Chrome */*/
 box-shadow: 2px 2px 3px #888888; /*Opera, Firefox 4+, IE9+ ONLY */
+/*ADDED*/
+background: #00447C;
+box-shadow: none;
+border-radius: 5px;
+color: #fff;
+width: 175px;
+height: 40px;
+border: 1px solid #093054;
+float: right;
+margin-right: 20px;
+
 }
 
 #preChatStartBot:hover{
@@ -2339,7 +2394,21 @@ float: right;
 /* prechat/offline windows*/
 #preChatContent{
 	margin-top: 2px;
+/*ADDED*/
+  font-size: 14px;
+  color: #000;
 }
+
+/*ADDED*/
+#prechatFields {
+  box-shadow: none;
+  background: #F4F4F4;
+  border: 1px solid #CECECE;
+  color: #000;
+  width: 530px;
+  height: 35px;
+}
+
 #prechatFields input, #prechatFields textarea, #prechatFields select {
 	margin: 4px 0 8px;
     color: #454545;
