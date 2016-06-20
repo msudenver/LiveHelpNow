@@ -27,11 +27,11 @@ height:100%;
 body{
 /*background:#EFEFEF;*/
 /*font-family:tahoma, arial;*/
-/*color:#000;*/
+color:#000;
+/*ADDED*/
 font-family: 'Open Sans';
 background: #fff;
 border: 1px solid #CECECE;
-color: #000000;
 }
 
 a {
