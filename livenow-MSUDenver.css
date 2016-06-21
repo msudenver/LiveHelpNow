@@ -13,6 +13,7 @@ form
 	height:100%;
 /*ADDED*/
   background: #fff;
+  /*padding: 15px;*/
 }
 input:focus{
 background-color: #fffaee;
@@ -30,14 +31,21 @@ body{
 /*font-family:tahoma, arial;*/
 color:#000;
 /*ADDED*/
-font-family: 'Open Sans';
+font-family: 'Open Sans', sans-serif;
 background: #fff;
-border: 1px solid #CECECE;
+/*border: 1px solid #CECECE;*/
+/*overflow: hidden;*/
+border: 23px solid white;
 }
 
 a {
 color: #0093e8;
 text-decoration: none;
+}
+
+/*ADDED*/
+#infoMessage {
+  padding-top: 20px;
 }
 
 #lblCompanyLogoTop
@@ -101,7 +109,7 @@ text-indent: 0px;
 /*padding-left: 22px;*/
 /*margin:20px 2px 2px 0;*/
 text-decoration: none;
-font-family: arial;
+/*font-family: arial;*/
 color: #000;
 font-size: 12px;
 padding-top: 1px;
@@ -112,45 +120,65 @@ color: #fff;
 height: 40px;
 width: 115px;
 border-radius: 5px;
-margin: 20px 20px 2px 0;
+margin: 20px 30px 2px 0;
 text-align: center;
 padding-left: 0px;
 }
 
 #closeTop:hover{
-background: url("https://www.livehelpnow.net/lhn/windows/chat/def/images/close.png") no-repeat scroll 0 0 transparent;
+/*background: url("https://www.livehelpnow.net/lhn/windows/chat/def/images/close.png") no-repeat scroll 0 0 transparent;*/
 display:block;
-width:60px;
-height:17px;
+/*width:60px;*/
+/*height:17px;*/
 float:right;
 margin-right: 50px;
 text-indent: 0px;
-padding-left: 22px;
-margin:20px 2px 2px 0;
+/*padding-left: 22px;*/
+/*margin:20px 2px 2px 0;*/
 text-decoration: none;
-font-family: arial;
+/*font-family: arial;*/
 font-weight: normal;
 color: #000;
 font-size: 12px;
 padding-top: 1px;
+/*ADDED*/
+background: #D11242;
+border: 1px solid #AA0924;
+color: #fff !important;
+height: 28px;
+width: 115px;
+border-radius: 5px;
+margin: 20px 30px 2px 0;
+text-align: center;
+padding-left: 0px;
 }
 
 #closeTop:active{
-background: url("https://www.livehelpnow.net/lhn/windows/chat/def/images/close.png") no-repeat scroll 0 -36px transparent;
+/*background: url("https://www.livehelpnow.net/lhn/windows/chat/def/images/close.png") no-repeat scroll 0 -36px transparent;*/
 display:block;
-width:60px;
-height:18px;
+/*width:60px;*/
+/*height:18px;*/
 float:right;
 margin-right: 50px;
 text-indent: 0px;
-padding-left: 22px;
-margin:20px 2px 2px 0;
+/*padding-left: 22px;*/
+/*margin:20px 2px 2px 0;*/
 text-decoration: none;
-font-family: arial;
+/*font-family: arial;*/
 font-weight: normal;
 color: #000;
 font-size: 12px;
 padding-top: 1px;
+/*ADDED*/
+background: #D11242;
+border: 1px solid #AA0924;
+color: #fff !important;
+height: 28px;
+width: 115px;
+border-radius: 5px;
+margin: 20px 30px 2px 0;
+text-align: center;
+padding-left: 0px;
 }
 
 #topSpacerLft{
@@ -163,8 +191,24 @@ width: 10px;
 height: 10px;
 }
 
+/*ADDED*/
+#emailTop:before{
+  position: relative;
+  content: "\f003";
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  color: #00447C;
+  font-size: 25px;
+  padding-right: 0.5em;
+  position: absolute;
+  top: 10px;
+  left: 0;
+}
+
 #emailTop, #emailTop:visited{
-background: url("https://www.livehelpnow.net/lhn/windows/chat/def/images/email_up.gif") no-repeat scroll 0 0 transparent;
+/*background: url("https://www.livehelpnow.net/lhn/windows/chat/def/images/email_up.gif") no-repeat scroll 0 0 transparent;*/
 display:block;
 width:22px;
 height:21px;
@@ -174,7 +218,7 @@ margin:18px 2px 5px 0;
 }
 
 #emailTop:hover{
-background: url("https://www.livehelpnow.net/lhn/windows/chat/def/images/email.gif") no-repeat scroll 0 0 transparent;
+/*background: url("https://www.livehelpnow.net/lhn/windows/chat/def/images/email.gif") no-repeat scroll 0 0 transparent;*/
 display:block;
 width:22px;
 height:21px;
@@ -194,8 +238,24 @@ width: 10px;
 height: 10px;
 }
 
+  /*ADDED*/
+#printTop:before{
+  position: relative;
+  content: "\f02f";
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  color: #00447C;
+  font-size: 25px;
+  padding-right: 0.5em;
+  position: absolute;
+  top: 10px;
+  left: 0;
+}
+
 #printTop, #printTop:visited{
-background: url("https://www.livehelpnow.net/lhn/windows/chat/def/images/printup.gif") no-repeat scroll 0 0 transparent;
+/*background: url("https://www.livehelpnow.net/lhn/windows/chat/def/images/printup.gif") no-repeat scroll 0 0 transparent;*/
 display:block;
 width:22px;
 height:31px;
@@ -205,7 +265,7 @@ margin:17px 2px 5px 0;
 }
 
 #printTop:hover{
-background: url("https://www.livehelpnow.net/lhn/windows/chat/def/images/print.gif") no-repeat scroll 0 0 transparent;
+/*background: url("https://www.livehelpnow.net/lhn/windows/chat/def/images/print.gif") no-repeat scroll 0 0 transparent;*/
 display:block;
 width:22px;
 height:31px;
@@ -305,30 +365,39 @@ vertical-align: top;
 height:35px;
 width:98%;
 position:relative;
-background-color: #fff4d4;
-border-width: 1px;
-border-style:solid;
-border-color:rgb(202, 208, 225);
+/*background-color: #fff4d4;*/
+/*border-width: 1px;*/
+/*border-style:solid;*/
+/*border-color:rgb(202, 208, 225);*/
 margin: 0 5px 5px;
 min-height:35px;
 border-radius: 2px;
-	-webkit-box-shadow: 2px 2px 1px #888888; /* Safari and Chrome */
-	box-shadow: 1px 1px 2px #888888; /*Opera, Firefox 4+, IE9+ ONLY */
+/* 	-webkit-box-shadow: 2px 2px 1px #888888; Safari and Chrome */
+/*	box-shadow: 1px 1px 2px #888888; Opera, Firefox 4+, IE9+ ONLY */
+  /*ADDED*/
+background-color: #00447C;
+border: 1px solid #093054;
+color: #fff !important;
 }
 
 .billText{
-font-family: verdana;
-font-size: 11px;
+/*font-family: verdana;*/
+font-size: 14px;
 margin: 4px;
-color: #4f3c01;
+color: #fff !important;
 position:absolute;
 left:0;
 top:0;
+/*ADDED*/
+background-color: none !important;
+margin-top: 9px;
+margin-left: 15px;
+margin-bottom: 9px;
 }
 .billText a
 {
-font-family: verdana;
-font-size: 11px;
+/*font-family: verdana;*/
+/*font-size: 11px;*/
 }
 #chatWindowRow{
 vertical-align:top;
@@ -437,8 +506,8 @@ border-style:solid;
 /*ADDED*/
 background-color: #F4F4F4;
 border-color: #CECECE;
-height: 255px;
-width: 400px;
+max-height: 255px;
+max-width: 400px;
 }
 
 #mainchat{
@@ -653,48 +722,57 @@ width:110px;
 }
 
 #sendRt, #sendRt:visited{
-background: url("https://www.livehelpnow.net/lhn/windows/chat/def/images/send_button.jpg") no-repeat scroll 0 0 transparent;
+/*background: url("https://www.livehelpnow.net/lhn/windows/chat/def/images/send_button.jpg") no-repeat scroll 0 0 transparent;*/
 display: block;
-width: 100px;
-height: 30px;
+/*width: 100px;*/
+/*height: 30px;*/
 text-indent: 0px;
 text-decoration: none;
-color: #2c2c2c;
+/*color: #2c2c2c;*/
 font-size: 14px;
 font-weight: normal;
 text-align: center;
-padding-top: 10px;
+padding-top: 12px;
 padding-right: 5px;
+width: 115px;
+height: 28px;
+color: #fff;
 }
 
 #sendRt:hover{
-background: url("https://www.livehelpnow.net/lhn/windows/chat/def/images/send_button.jpg") no-repeat scroll 0 0 transparent;
+/*background: url("https://www.livehelpnow.net/lhn/windows/chat/def/images/send_button.jpg") no-repeat scroll 0 0 transparent;*/
 display: block;
-width: 100px;
-height: 30px;
+/*width: 100px;*/
+/*height: 30px;*/
 text-indent: 0px;
 text-decoration: none;
-color: #2c2c2c;
+/*color: #2c2c2c;*/
 font-size: 14px;
 font-weight: bold;
 text-align: center;
-padding-top: 10px;
+padding-top: 12px;
 padding-right: 5px;
+width: 115px;
+height: 28px;
+color: #fff;
 }
 
 #sendRt:active{
-background: url("https://www.livehelpnow.net/lhn/windows/chat/def/images/send_button.jpg") no-repeat scroll 0 -40px transparent;
+/*background: url("https://www.livehelpnow.net/lhn/windows/chat/def/images/send_button.jpg") no-repeat scroll 0 -40px transparent;*/
 display: block;
-width: 100px;
-height: 30px;
+/*width: 100px;*/
+/*height: 30px;*/
 text-indent: 0px;
 text-decoration: none;
-color: #2c2c2c;
+/*color: #2c2c2c;*/
 font-size: 14px;
 font-weight: bold;
 text-align: center;
-padding-top: 10px;
+padding-top: 12px;
 padding-right: 5px;
+width: 115px;
+height: 28px;
+color: #fff;
 }
 
 #footer{
@@ -1040,61 +1118,75 @@ display:block;
 /*width:60px;*/
 /*height:17px;*/
 float:right;
-margin-right: 50px;
+/*margin-right: 50px;*/
 text-indent: 0px;
 /*padding-left: 22px;*/
 /*margin:20px 2px 2px 0;*/
 text-decoration: none;
-font-family: arial;
+/*font-family: arial;*/
 /*color: #000;*/
-font-size: 12px;
-padding-top: 1px;
+font-size: 14px;
+padding-top: 12px;
 /*ADDED*/
 background: #D11242;
 border: 1px solid #AA0924;
-color: #fff;
-height: 40px;
+color: #fff !important;
+height: 28px;
 width: 115px;
 border-radius: 5px;
-margin: 20px 20px 2px 0;
+margin: 20px 30px 2px 0;
 text-align: center;
 padding-left: 0px;
 }
 
 #preChatCloseTop:hover{
-background: url("https://www.livehelpnow.net/lhn/windows/chat/def/images/close.png") no-repeat scroll 0 0 transparent;
+/*background: url("https://www.livehelpnow.net/lhn/windows/chat/def/images/close.png") no-repeat scroll 0 0 transparent;*/
 display:block;
-width:60px;
-height:17px;
+/*width:60px;*/
+/*height:17px;*/
 float:right;
 margin-right: 50px;
 text-indent: 0px;
-padding-left: 22px;
-margin:20px 2px 2px 0;
+/*padding-left: 22px;*/
+/*margin:20px 2px 2px 0;*/
 text-decoration: none;
-font-family: arial;
-font-weight: normal;
-color: #000;
-font-size: 12px;
-padding-top: 1px;
+/*font-family: arial;*/
+/*font-weight: normal;*/
+/*color: #000;*/
+font-size: 14px;
+padding-top: 12px;
+/*ADDED*/
+background: #D11242;
+border: 1px solid #AA0924;
+color: #fff;
+height: 28px;
+width: 115px;
+border-radius: 5px;
+margin: 20px 30px 2px 0;
+text-align: center;
+padding-left: 0px;
+font-weight: bold;
 }
 
 #preChatCloseTop:active{
-background: url("https://www.livehelpnow.net/lhn/windows/chat/def/images/close.png") no-repeat scroll 0 -36px transparent;
+/*background: url("https://www.livehelpnow.net/lhn/windows/chat/def/images/close.png") no-repeat scroll 0 -36px transparent;*/
 display:block;
-width:60px;
-height:18px;
+/*width:60px;*/
+/*height:18px;*/
 float:right;
 margin-right: 50px;
 text-indent: 0px;
-padding-left: 22px;
-margin:20px 2px 2px 0;
+/*padding-left: 22px;*/
+/*margin:20px 2px 2px 0;*/
 text-decoration: none;
-font-family: arial;
-font-weight: normal;
-color: #000;
-font-size: 12px;
-padding-top: 1px;
+/*font-family: arial;*/
+/*font-weight: normal;*/
+/*color: #000;*/
+font-size: 14px;
+padding-top: 12px;
+/*ADDED*/
+font-weight: bold;
+margin: 20px 30px 2px 0;
 }
 
 #preChatWindowRow{
@@ -1310,10 +1402,13 @@ height: 1px;
 }
 
 #preChatRtAgentPhoto{
-display: block; /*Must be display: block; in order to resize and become visible*/
+/* display: block; */ /*Must be display: block; in order to resize and become visible*/
 width:175px;
 vertical-align:top;
 text-align:center;
+/*ADDED*/
+display: none;
+visibility: hidden;
 }
 
 #preChatRtAgentPhotoImg{
@@ -1584,56 +1679,79 @@ text-decoration: none;
 font-size: 14px;
 font-weight: normal;
 text-align: center;
-padding-top: 5px;
-/*-webkit-box-shadow: 10px 10px 5px #888888; /* Safari and Chrome */*/
-box-shadow: 2px 2px 3px #888888; /*Opera, Firefox 4+, IE9+ ONLY */
+padding-top: 12px;
+/*-webkit-box-shadow: 10px 10px 5px #888888; /* Safari and Chrome */
+/*box-shadow: 2px 2px 3px #888888; Opera, Firefox 4+, IE9+ ONLY */
 /*ADDED*/
 background: #00447C;
 box-shadow: none;
 border-radius: 5px;
 color: #fff;
 width: 175px;
-height: 40px;
+height: 28px;
 border: 1px solid #093054;
 float: right;
-margin-right: 20px;
+margin-right: 30px;
+margin-bottom: 30px;
 
 }
 
 #preChatStartBot:hover{
 display: block;
 margin-left: 15px;
-background: url("https://www.livehelpnow.net/lhn/windows/chat/def/images/start_button.jpg") no-repeat scroll 0 0 transparent;
-width: 120px;
-height: 26px;
+/*background: url("https://www.livehelpnow.net/lhn/windows/chat/def/images/start_button.jpg") no-repeat scroll 0 0 transparent;*/
+/*width: 120px;*/
+/*height: 26px;*/
 text-indent: 0px;
 margin-bottom: 0px;
 text-decoration: none;
-color: #3c3c3c;
+/*color: #3c3c3c;*/
 font-size: 14px;
 font-weight: bold;
 text-align: center;
-padding-top: 5px;
--webkit-box-shadow: 10px 10px 5px #888888; /* Safari and Chrome */
-box-shadow: 2px 2px 3px #888888; /*Opera, Firefox 4+, IE9+ ONLY */
+padding-top: 12px;
+/*-webkit-box-shadow: 10px 10px 5px #888888;  Safari and Chrome */
+/*box-shadow: 2px 2px 3px #888888; Opera, Firefox 4+, IE9+ ONLY */
+/*ADDED*/
+background: #00447C;
+box-shadow: none;
+border-radius: 5px;
+color: #fff;
+width: 175px;
+height: 28px;
+border: 1px solid #093054;
+float: right;
+margin-right: 30px;
+margin-bottom: 30px;
 }
 
 #preChatStartBot:active{
 display: block;
 margin-left: 15px;
-background: url("https://www.livehelpnow.net/lhn/windows/chat/def/images/start_button.jpg") no-repeat scroll 0 -31px transparent;
-width: 120px;
-height: 23px;
+/*background: url("https://www.livehelpnow.net/lhn/windows/chat/def/images/start_button.jpg") no-repeat scroll 0 -31px transparent;*/
+/*width: 120px;*/
+/*height: 23px;*/
 text-indent: 0px;
 margin-bottom: 0px;
 text-decoration: none;
-color: #3c3c3c;
+/*color: #3c3c3c;*/
 font-size: 14px;
 font-weight: bold;
 text-align: center;
-padding-top: 8px;
--webkit-box-shadow: 10px 10px 5px #888888; /* Safari and Chrome */
-box-shadow: 2px 2px 3px #888888; /*Opera, Firefox 4+, IE9+ ONLY */
+padding-top: 12px;
+/*-webkit-box-shadow: 10px 10px 5px #888888; */ /* Safari and Chrome */
+/*box-shadow: 2px 2px 3px #888888; */ /* Opera, Firefox 4+, IE9+ ONLY */
+/*ADDED*/
+background: #00447C;
+box-shadow: none;
+border-radius: 5px;
+color: #fff;
+width: 175px;
+height: 28px;
+border: 1px solid #093054;
+float: right;
+margin-right: 30px;
+margin-bottom: 30px;
 }
 
 #preChatCloseBot{
@@ -1826,7 +1944,7 @@ text-indent: 0px;
 padding-left: 22px;
 margin:20px 2px 2px 0;
 text-decoration: none;
-font-family: arial;
+/*font-family: arial;*/
 color: #000;
 font-size: 12px;
 padding-top: 1px;
@@ -1843,7 +1961,7 @@ text-indent: 0px;
 padding-left: 22px;
 margin:20px 2px 2px 0;
 text-decoration: none;
-font-family: arial;
+/*font-family: arial;*/
 font-weight: normal;
 color: #000;
 font-size: 12px;
@@ -1861,7 +1979,7 @@ text-indent: 0px;
 padding-left: 22px;
 margin:20px 2px 2px 0;
 text-decoration: none;
-font-family: arial;
+/*font-family: arial;*/
 font-weight: normal;
 color: #000;
 font-size: 12px;
@@ -2403,23 +2521,29 @@ float: right;
 /*ADDED*/
 #prechatFields {
   box-shadow: none;
-  background: #F4F4F4;
-  border: 1px solid #CECECE;
+  background: #fff;
+  border: none;
   color: #000;
-  width: 530px;
+  width: 100%;
+  max-width: 530px;
   height: 35px;
 }
 
 #prechatFields input, #prechatFields textarea, #prechatFields select {
 	margin: 4px 0 8px;
     color: #454545;
-	width: 250px;
+	/*width: 250px;*/
     font-family: Verdana,Arial,Helvetica,sans-serif;
     font-size: 14px;
     padding: 3px;
 	border: 1px solid #D9d9d9;
-	-webkit-box-shadow: 10px 10px 5px #888888;  /*Safari and Chrome */
-	box-shadow: 2px 2px 3px #888888; /*Opera, Firefox 4+, IE9+ ONLY */
+	/*-webkit-box-shadow: 10px 10px 5px #888888; */ /*Safari and Chrome */
+	/*box-shadow: 2px 2px 3px #888888; */ /*Opera, Firefox 4+, IE9+ ONLY */
+  /*ADDED*/
+  background: #f4f4f4;
+  width: 100%;
+  max-width: 530px;
+  height: 35px;
 }
 #prechatFields textarea
 {
@@ -2446,7 +2570,8 @@ margin-top: 0px;
 }
 #preChatContent
 {
-	font-size: 12px;
+	/*font-size: 12px;*/
+	font-size: 14px;
 }
 
 /* this div is displayed when user clicks "Email Transcript" button */

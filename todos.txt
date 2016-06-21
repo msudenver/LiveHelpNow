@@ -1,0 +1,1 @@
+Chat text font: needs to be Open Sans but font is controlled by an iframe.
