@@ -5,11 +5,17 @@
 /* MSU Denver custom styles for chat */
 /* DO NOT EDIT*/
 
-html {height: 100%;}
+html {
+  height: 100%;
+  /*ADDED*/
+  overflow: hidden;
+}
 body{
   height:99.8%;
   border:none;
   margin: 0px 0px 0px 0px;
+  /*ADDED*/
+  overflow: hidden;
 }
 form
 {
@@ -39,7 +45,7 @@ body{
 /*font-family:tahoma, arial;*/
 color:#000;
 /*ADDED*/
-font-family: 'Open Sans', sans-serif;
+font-family: 'Open Sans', sans-serif !important;
 background: #fff !important;
 /*border: 1px solid #CECECE;*/
 /*overflow: hidden;*/
@@ -145,7 +151,7 @@ text-indent: 0px;
 /*margin:20px 2px 2px 0;*/
 text-decoration: none;
 /*font-family: arial;*/
-font-weight: normal;
+/*font-weight: normal;*/
 color: #000;
 font-size: 14px;
 padding-top: 12px;
@@ -159,6 +165,7 @@ border-radius: 5px;
 margin: 20px 30px 2px 0;
 text-align: center;
 padding-left: 0px;
+font-weight: bold;
 }
 
 #closeTop:active{
@@ -199,57 +206,37 @@ width: 10px;
 height: 10px;
 }
 
-/*ADDED*/
-/*#emailTop:before{
-  position: relative;
-  content: "\f003";
-  font-family: FontAwesome;
-  font-style: normal;
-  font-weight: normal;
-  text-decoration: inherit;
-  color: #00447C;
-  font-size: 25px;
-  padding-right: 0.5em;
-  position: absolute;
-  top: 10px;
-  left: 0;
-}*/
-
-#emailTop, #emailTop:visited, #emailTop:before {
+#emailTop, #emailTop:visited {
 /*background: url("https://www.livehelpnow.net/lhn/windows/chat/def/images/email_up.gif") no-repeat scroll 0 0 transparent;*/
+background: url("http://sitemanager.msudenver.edu/media/assets/livehelpnow/fa-envelope-sm.png") no-repeat scroll 0 0 transparent;
 display:block;
 /*width:22px;*/
 /*height:21px;*/
-/*float:right;*/
-/*text-indent: -9999px;*/
+float:right;
+text-indent: -9999px;
 /*margin:18px 2px 5px 0;*/
-
 /*ADDED*/
-  content: "\f0e0";
-  font-family: FontAwesome;
-  font-style: normal;
-  font-weight: normal;
-  text-decoration: inherit;
-  color: #00447C;
-  font-size: 25px;
-  /*padding-right: 0.5em;*/
-  position: relative;
-  top: 5px;
-  left: 0;
-  margin-left: 77%;
-
+width:32px;
+height:25px;
+margin:73px -122px 5px 0;
+z-index: 99;
 }
 
 #emailTop:hover{
 /*background: url("https://www.livehelpnow.net/lhn/windows/chat/def/images/email.gif") no-repeat scroll 0 0 transparent;*/
+background: url("http://sitemanager.msudenver.edu/media/assets/livehelpnow/fa-envelope-sm.png") no-repeat scroll 0 0 transparent;
 display:block;
-width:22px;
-height:21px;
+/*width:22px;*/
+/*height:21px;*/
 float:right;
 text-indent: -9999px;
-margin:18px 2px 5px 0;
+/*margin:18px 2px 5px 0;*/
+/*ADDED*/
+width:32px;
+height:25px;
+margin:73px -122px 5px 0;
+z-index: 99;
 }
-
 
 #topSpacerRt{
 display:block;
@@ -261,38 +248,36 @@ width: 10px;
 height: 10px;
 }
 
-#printTop, #printTop:visited, #printTop:before {
+#printTop, #printTop:visited {
 /*background: url("https://www.livehelpnow.net/lhn/windows/chat/def/images/printup.gif") no-repeat scroll 0 0 transparent;*/
+background: url("http://sitemanager.msudenver.edu/media/assets/livehelpnow/fa-print-sm.png") no-repeat scroll 0 0 transparent;
 display:block;
-/*width:22px;
-height:31px;
+/*width:22px;*/
+/*height:31px;*/
 float:right;
 text-indent: -9999px;
-margin:17px 2px 5px 0;*/
-
+/*margin:17px 2px 5px 0;*/
 /*ADDED*/
-  content: "\f02f";
-  font-family: FontAwesome;
-  font-style: normal;
-  font-weight: normal;
-  text-decoration: inherit;
-  color: #00447C;
-  font-size: 25px;
-  /*padding-right: 0.5em;*/
-  position: relative;;
-  top: 5px;
-  left: 0;
-  margin-left: 75%;
+width:30px;
+height:28px;
+margin:71px -90px 5px 0;
+z-index: 99;
 }
 
 #printTop:hover{
 /*background: url("https://www.livehelpnow.net/lhn/windows/chat/def/images/print.gif") no-repeat scroll 0 0 transparent;*/
+background: url("http://sitemanager.msudenver.edu/media/assets/livehelpnow/fa-print-sm.png") no-repeat scroll 0 0 transparent;
 display:block;
 width:22px;
 height:31px;
 float:right;
 text-indent: -9999px;
-margin:17px 2px 5px 0;
+/*margin:17px 2px 5px 0;*/
+/*ADDED*/
+width:30px;
+height:28px;
+margin:71px -90px 5px 0;
+z-index: 99;
 }
 
 #facebookTop, #facebookTop:visited{
@@ -383,8 +368,10 @@ vertical-align: top;
 
 .billSpacer
 {
-height:35px;
-width:98%;
+/*height:35px;*/
+height: inherit;
+/*width:98%;*/
+width: 93.4%;
 position:relative;
 /*background-color: #fff4d4;*/
 /*border-width: 1px;*/
@@ -392,13 +379,14 @@ position:relative;
 /*border-color:rgb(202, 208, 225);*/
 margin: 10px 5px 10px 5px;
 min-height:35px;
-border-radius: 2px;
+border-radius: 5px;
 /* 	-webkit-box-shadow: 2px 2px 1px #888888; Safari and Chrome */
 /*	box-shadow: 1px 1px 2px #888888; Opera, Firefox 4+, IE9+ ONLY */
   /*ADDED*/
 background-color: #00447C;
 border: 1px solid #093054;
 color: #fff !important;
+padding-bottom: 10px;
 }
 
 .billText{
@@ -410,7 +398,7 @@ position:absolute;
 left:0;
 top:0;
 /*ADDED*/
-background-color: none !important;
+background-color: #00447C !important;
 margin-top: 9px;
 margin-left: 15px;
 margin-bottom: 9px;
@@ -550,9 +538,10 @@ text-align:left;
 #rtAgentPhotoImg{
 	width:100px;
 	border-radius: 2px;
-	-webkit-box-shadow: 2px 2px 1px #888888; /* Safari and Chrome */
-	box-shadow: 1px 1px 2px #888888; /*Opera, Firefox 4+, IE9+ ONLY */
-
+/* 	-webkit-box-shadow: 2px 2px 1px #888888; Safari and Chrome */
+/*	box-shadow: 1px 1px 2px #888888; Opera, Firefox 4+, IE9+ ONLY */
+/*ADDED*/
+  padding-left: 12px;
 }
 
 #facebookRt, #facebookRt:visited{
@@ -740,6 +729,8 @@ width:5px;
 padding-top: 2px;
 vertical-align:top;
 width:110px;
+/*ADDED*/
+padding-left: 10px;
 }
 
 #sendRt, #sendRt:visited{
@@ -776,7 +767,7 @@ font-size: 14px;
 font-weight: bold;
 text-align: center;
 padding-top: 12px;
-padding-right: 5px;
+/*padding-right: 5px;*/
 width: 115px;
 height: 28px;
 color: #fff;

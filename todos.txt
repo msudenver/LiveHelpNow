@@ -1,7 +1,5 @@
 Chat text font: needs to be Open Sans but font is controlled by an iframe.
 
-Print and email icons (#emailTop and #printTop): If using PNGs hosted to a MSUDenver server, need to upload PNGs to server. If trying to use text icons from FontAwesome, need to test on live site if the fontAwesome icons are correctly appearing.
-
 X on END CHAT button needs to be coded for
 
 Scroll bars on pre-chat and chat layouts need to be eliminated but are controlled by an iframe.
