@@ -7,15 +7,11 @@
 
 html {
   height: 100%;
-  /*ADDED*/
-  overflow: hidden;
 }
 body{
   height:99.8%;
   border:none;
   margin: 0px 0px 0px 0px;
-  /*ADDED*/
-  overflow: hidden;
 }
 form
 {
@@ -87,6 +83,8 @@ text-decoration: none;
 #row1Column{
 vertical-align: top;
 height: 71px;
+/*ADDED*/
+border-bottom: 2px solid #f4f4f4;
 }
 #chatTitle{
 /*background: url("https://www.livehelpnow.net/lhn/windows/chat/def/images/title_shade.png") repeat-x scroll 0 0 transparent;*/
@@ -110,6 +108,12 @@ float:left;
 margin:2px;
 padding-top: 10px;
 padding-left: 5px;
+}
+
+#closeTop:before {
+content: "\f00d";
+font-family: FontAwesome;
+padding-right: 5px;
 }
 
 #closeTop, #closeTop:visited{
@@ -379,7 +383,7 @@ position:relative;
 /*border-color:rgb(202, 208, 225);*/
 margin: 10px 5px 10px 5px;
 min-height:35px;
-border-radius: 5px;
+border-radius: 0px;
 /* 	-webkit-box-shadow: 2px 2px 1px #888888; Safari and Chrome */
 /*	box-shadow: 1px 1px 2px #888888; Opera, Firefox 4+, IE9+ ONLY */
   /*ADDED*/
@@ -1126,6 +1130,12 @@ width: 18px;
 height: 18px;
 float: left;
 margin: 3px 4px;
+}
+
+#preChatCloseTop:before {
+content: "\f00d";
+font-family: FontAwesome;
+padding-right: 5px;
 }
 
 #preChatCloseTop, #preChatCloseTop:visited{

@@ -1,5 +1,3 @@
 Chat text font: needs to be Open Sans but font is controlled by an iframe.
 
-X on END CHAT button needs to be coded for
-
-Scroll bars on pre-chat and chat layouts need to be eliminated but are controlled by an iframe.
+Scroll bars on chat and pre-chat layouts can be eliminated using overflow:hidden. However, window remains re-sizable such that content can become hidden. Ideal solution would be to lock window size (to a min-width/min-height) but this cannot (?) be accomplished without javascript.
