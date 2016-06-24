@@ -2603,8 +2603,8 @@ float: right;
 }
 #prechatFields textarea
 {
-	width:280px;
-	height:100px;
+	/*width:280px;*/
+	/*height:100px;*/
 }
 
 #prechatFields textarea:focus{
