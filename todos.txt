@@ -1,3 +1,247 @@
-Chat text font: needs to be Open Sans but font is controlled by an iframe.
+Chat text font is controlled by an iframe. To change font to Open Sans, need to go to admin panel - chat system - system setup - system settings. It will be at the bottom.
+
 
 Scroll bars on chat and pre-chat layouts can be eliminated using overflow:hidden. However, window remains re-sizable such that content can become hidden. Ideal solution would be to lock window size (to a min-width/min-height) but this cannot (?) be accomplished without javascript.
+
+
+There are post-chat survey screens whose css need to be evaluated, edited, and tested. They are as follows:
+
+/*  surveyreset.css  */
+
+              /* --------------------------------------------------------------
+
+                 reset.css
+                 * Resets default browser CSS.
+
+              -------------------------------------------------------------- */
+
+              html, body, div, span, object, iframe,
+              h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+              a, abbr, acronym, address, code,
+              del, dfn, em, img, q, dl, dt, dd, ol, ul, li,
+              fieldset, form, label, legend,
+              table, caption, tbody, tfoot, thead, tr, th, td {
+                margin: 0;
+                padding: 0;
+                border: 0;
+                font-weight: inherit;
+                font-style: inherit;
+                font-size: 100%;
+                font-family: inherit;
+                vertical-align: baseline;
+              }
+
+              body {
+                line-height: 1.5;
+              }
+
+              /* Tables still need 'cellspacing="0"' in the markup. */
+              table { border-collapse: separate; border-spacing: 0; }
+              caption, th, td { text-align: left; font-weight: normal; }
+              table, td, th { vertical-align: middle; }
+
+              /* Remove possible quote marks (") from <q>, <blockquote>. */
+              blockquote:before, blockquote:after, q:before, q:after { content: ""; }
+              blockquote, q { quotes: "" ""; }
+
+              /* Remove annoying border on linked images. */
+              a img { border: none; }
+
+
+
+
+
+
+
+
+
+/*  survey.css  */
+
+              @charset "utf-8";
+
+              /*
+              # Dark grey (text): #4e4e4e
+              # Mid Green (headings) #80c200
+              # Green (links) #cffe1c
+              # Light blue (Hover) #0099ff
+
+              font: font-style (italic/normal) font-variant (small-caps) font-weight font-size/line-height font-family;
+              font: italic small-caps bold 1em/140% "Lucida Grande",sans-serif;
+              */
+              body
+              {
+              	font-family:Tahoma,Arial, Helvetica, sans-serif;
+              }
+              .wrap
+              {
+              	margin:0 15px 0 4px;
+              	position:relative;
+              }
+              .formelements
+              {
+              	margin:0 0px 0 25px;
+              	position:relative;
+              }
+              .survey
+              {
+              	position:absolute;left:0px;top:00px;width:100%;height:100%;overflow:auto;
+              }
+              .header
+              {
+              	background: #d3edfa url("http://www.livehelpnow.net/images/cloud_test4.gif") top left repeat-x;
+              	height:71px;
+              	position:relative;
+              	overflow:hidden;
+              }
+
+
+              }
+              .logo
+              {
+              	width:145px;
+              	height:13px;
+              	position:absolute;
+              	top:2px;
+              	display:block;
+              }
+
+              #imgLogo
+              {
+              	margin: 0 0 0 25px;
+              }
+
+              a.close
+              {
+              	display:block;
+              	width:13px;
+              	height:13px;
+              	top:15px;
+              	position:absolute;
+              	right:0;
+              }
+              .close img
+              	{
+              	border:0px;
+              	}
+              .underheader
+              {
+              	min-height:30px;
+              	background:#FFEFDC;/* url(/lhn/images/survey/shadow.png) top left repeat-x;*/
+              	border-color: #CAD0E1;
+              	border-style: solid;
+              	border-width: 1px;
+              	color:#000;
+              	font:bold 16px/180% Tahoma,Arial, Helvetica, sans-serif;
+              	overflow:hidden;
+              	margin: 0 0 0 24px;
+              	width: 94%;
+              }
+
+              #lblUnderHeader {
+
+              }
+
+              .undernote
+              {
+              	width:92%;
+              	margin-top:7px;
+              	margin-left:25px;
+              	margin-bottom:7px;
+              	position:relative;
+              	font:normal 12px Tahoma,Arial, Helvetica, sans-serif;
+              }
+
+              form
+              {
+              	display:block;
+              	margin:0px 0 0 0;
+              }
+              .form_title
+              {
+              	color:#000;
+              	font-size:14px;
+              	font-weight:bold;
+              }
+              .radios
+              {
+              	color:#6a6a6a;
+              	font-size:12px;
+              	margin-top:5px;
+              	margin-bottom:15px;
+              }
+              .radio
+              {
+              	float:left;
+              	text-align:center;
+              	margin-right:5px;
+              	width:20px;
+              }
+              .radio_box
+              {
+              	float:left;
+              	text-align:right;
+              	margin-right:5px;
+              	width:100px;
+              }
+              .radio_top
+              {
+              	font-size:9px;
+              	height:10px;
+              }
+              .radio_bottom
+              {
+
+              	white-space:nowrap;
+              	font-size:12px;
+              	height:10px;
+              	display:block;
+              }
+              .clear
+              {
+              	clear:both;
+              	width:1px;
+              	height:1px;
+              	overflow:hidden;
+              }
+              .textarea_title
+              {
+              	font:14px Tahoma,Arial, Helvetica, sans-serif;
+              	padding-top:3px;
+              }
+              .red
+              {
+              	color:Red;
+              }
+              textarea
+              {
+              	font-family:Tahoma,Arial, Helvetica, sans-serif;
+              	font-size:12px;
+              	width:95%;
+              	height:112px;
+              	padding:5px;
+              	display:block;
+              	/*background:url(/lhn/images/survey/textarea.gif) top left no-repeat;*/
+              	margin:8px 0 10px;
+
+              }
+
+              input[type="submit"]
+              {
+                     width:130px;
+                     height:25px;
+                     border:0;
+                     background:url(/lhn/images/survey/survey_btn.gif) top left no-repeat;
+                     display:block;
+                     cursor:pointer;
+                     font-size:11px;
+              }
+              #btnSubmit
+              {
+                     width:130px;
+                     height:25px;
+                     border:0;
+                     background:url(http://www.livehelpnow.net/lhn/images/survey/survey_btn.gif) top left no-repeat;
+                     display:block;
+                     cursor:pointer;
+                     font-size:11px;
+              }
