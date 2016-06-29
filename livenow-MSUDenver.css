@@ -66,6 +66,11 @@ text-decoration: none;
 	color:#6d6d6d;
 	padding:15px 0 0 7px;
 }
+
+#lblCompanyLogoTop img {
+  height: 30px !important;
+}
+
 #lblCompanyLogoBottom
 {
 	float:left;
@@ -161,8 +166,8 @@ color: #000;
 font-size: 14px;
 padding-top: 12px;
 /*ADDED*/
-background: #D11242;
-border: 1px solid #AA0924;
+background: #AA0924;
+border: 1px solid #930031;
 color: #fff !important;
 height: 28px;
 width: 115px;
@@ -543,6 +548,9 @@ width: 5px;
 width: 105px;
 vertical-align:top;
 text-align:left;
+/*ADDED*/
+padding: 0px 0px 0px 8px;
+/*border: 1px solid #CECECE;*/
 }
 
 #rtAgentPhotoImg{
@@ -783,6 +791,9 @@ width: 115px;
 height: 27px;
 color: #fff;
 text-transform: uppercase;
+/*ADDED*/
+background: #093054;
+border: 1px solid #003254;
 }
 
 #sendRt:active{
@@ -1150,16 +1161,9 @@ padding-right: 5px;
 #preChatCloseTop, #preChatCloseTop:visited{
 /*background: url("https://www.livehelpnow.net/lhn/windows/chat/def/images/close.png") no-repeat scroll 0 -18px transparent;*/
 display:block;
-/*width:60px;*/
-/*height:17px;*/
 float:right;
-/*margin-right: 50px;*/
 text-indent: 0px;
-/*padding-left: 22px;*/
-/*margin:20px 2px 2px 0;*/
 text-decoration: none;
-/*font-family: arial;*/
-/*color: #000;*/
 font-size: 14px;
 padding-top: 12px;
 /*ADDED*/
@@ -1169,7 +1173,7 @@ color: #fff !important;
 height: 28px;
 width: 115px;
 border-radius: 5px;
-margin: 20px 30px 2px 0;
+margin: 5px 30px 2px 0;
 text-align: center;
 padding-left: 0px;
 text-transform: uppercase;
@@ -1192,13 +1196,13 @@ text-decoration: none;
 font-size: 14px;
 padding-top: 12px;
 /*ADDED*/
-background: #D11242;
-border: 1px solid #AA0924;
+background: #AA0924;
+border: 1px solid #930031;
 color: #fff;
 height: 28px;
 width: 115px;
 border-radius: 5px;
-margin: 20px 30px 2px 0;
+margin: 5px 30px 2px 0;
 text-align: center;
 padding-left: 0px;
 font-weight: bold;
@@ -1223,7 +1227,7 @@ font-size: 14px;
 padding-top: 12px;
 /*ADDED*/
 font-weight: bold;
-margin: 20px 30px 2px 0;
+margin: 5px 30px 2px 0;
 text-transform: uppercase;
 }
 
@@ -1751,13 +1755,13 @@ padding-top: 12px;
 /*-webkit-box-shadow: 10px 10px 5px #888888;  Safari and Chrome */
 /*box-shadow: 2px 2px 3px #888888; Opera, Firefox 4+, IE9+ ONLY */
 /*ADDED*/
-background: #00447C;
+background: #093054;
 box-shadow: none;
 border-radius: 5px;
 color: #fff;
 width: 175px;
 height: 28px;
-border: 1px solid #093054;
+border: 1px solid #003254;
 float: right;
 margin-right: 30px;
 margin-bottom: 30px;

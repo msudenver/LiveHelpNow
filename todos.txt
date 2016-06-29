@@ -1,8 +1,8 @@
 Chat text font is controlled by an iframe. To change font to Open Sans, need to go to admin panel - chat system - system setup - system settings. It will be at the bottom.
 
+You can set a fixed width and height of chat window by going to Admin panel—chat system—customization—chat window. Click on window id and you will be able to adjust height and width.
 
-Scroll bars on chat and pre-chat layouts can be eliminated using overflow:hidden. However, window remains re-sizable such that content can become hidden. Ideal solution would be to lock window size (to a min-width/min-height) but this cannot (?) be accomplished without javascript.
-
+We will need to test the above solution to see how scroll bars are affected. If scroll bars are still a problem we can investigate how to eliminate them. Currently, scroll bars on chat and pre-chat layouts can be eliminated using overflow:hidden. However, window remains re-sizable such that content can become hidden. Ideal solution would be to lock window size (to a min-width/min-height) but this cannot (?) be accomplished without javascript. 
 
 There are post-chat survey screens whose css need to be evaluated, edited, and tested. They are as follows:
 
