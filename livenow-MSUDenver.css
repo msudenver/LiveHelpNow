@@ -2605,6 +2605,9 @@ float: right;
   max-width: 530px;
   height: 35px;
 }
+body#prechatContentBody {
+   height: 50%;
+}
 
 #prechatFields input, #prechatFields textarea, #prechatFields select {
 	margin: 4px 0 8px;
@@ -2654,8 +2657,8 @@ margin-top: 0px;
 /* this div is displayed when user clicks "Email Transcript" button */
 .popupem
 {
-	font-size: 13px;
-	font-family:tahoma;
+	/*font-size: 13px;*/
+	/*font-family:tahoma;*/
 	POSITION: absolute;
 	display:none;;
 	BACKGROUND-COLOR: #fff;
@@ -2666,5 +2669,14 @@ margin-top: 0px;
 	BORDER-BOTTOM: 3px solid black;
 	BORDER-RIGHT: 3px solid black;
 	PADDING: 3px;
-	z-index: 10
+	z-index: 10;
+/* ADDED */
+font-size: 14px !important;
+font-family: "Open Sans", sans-serif !important;
+}
+
+#btnGo, #btnGo:visited{
+  background: url("http://sitemanager.msudenver.edu/media/assets/livehelpnow/fa-envelope-sm.png") no-repeat scroll 0 0 transparent !important;
+  width: 40px !important;
+  height: 31px !important;
 }
